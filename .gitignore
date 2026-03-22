@@ -1,0 +1,13 @@
+# Honeypot Logs
+cowrie.log*
+cowrie.json*
+
+# Cowrie Data & Downloads (TTLs/Malware samples)
+bin/
+data/
+downloads/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.env
