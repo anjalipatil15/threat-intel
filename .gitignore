@@ -11,3 +11,5 @@ downloads/
 __pycache__/
 *.py[cod]
 .env
+
+cowrie_readable_report.txt
