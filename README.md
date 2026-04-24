@@ -44,7 +44,6 @@ Streamlit Dashboard
 | Cloud | AWS EC2 |
 | Environment | Kali Linux |
 | Analysis | Python |
-| Framework Mapping | MITRE ATT&CK |
 | Dashboard | Streamlit |
 
 ---
