@@ -11,7 +11,7 @@ A threat intelligence pipeline built on **Cowrie** (SSH honeypot) deployed on **
 
 Most detection tools tell you an attack happened. This project focuses on what attackers do *after* they get in.
 
-The honeypot emulates a vulnerable SSH endpoint and logs everything: credential stuffing patterns, command sequences, and post-login reconnaissance activity. A Python analysis layer structures the raw session data, maps it to the MITRE ATT&CK framework, and surfaces it through a Streamlit dashboard.
+The honeypot emulates a vulnerable SSH endpoint and logs everything: credential stuffing patterns, command sequences, and post-login reconnaissance activity. A Python analysis layer structures the raw session data, and surfaces it through a Streamlit dashboard.
 
 ---
 
@@ -55,7 +55,6 @@ Streamlit Dashboard
 - **Session-level parsing** — extracts IP behavior, credential pairs, command sequences, and session duration
 - **Credential analysis** — identifies reuse patterns across unrelated source IPs
 - **Post-login command tracking** — logs what attackers run after gaining access
-- **MITRE ATT&CK mapping** — classifies observed activity into tactics and techniques (e.g., T1110 Brute Force, T1059 Command Execution)
 - **Streamlit dashboard** — visualizes attacker patterns, top credentials attempted, and session timelines
 
 ---
@@ -66,7 +65,7 @@ Streamlit Dashboard
 
 - Kali Linux (or any Debian-based system)
 - AWS account with EC2 access
-- Python 3.8+
+- Python 3.9+
 
 ### 1. Deploy Cowrie on EC2
 
@@ -121,19 +120,6 @@ honeypot-threat-intel/
 ├── requirements.txt
 └── README.md
 ```
-
----
-
-## MITRE ATT&CK Coverage
-
-| Tactic | Technique | Description |
-|---|---|---|
-| Initial Access | T1190 | Exploit public-facing SSH |
-| Credential Access | T1110.001 | Brute force — password guessing |
-| Credential Access | T1110.004 | Credential stuffing |
-| Discovery | T1082 | System information discovery |
-| Discovery | T1033 | System owner/user discovery |
-| Execution | T1059 | Command and scripting interpreter |
 
 ---
 
