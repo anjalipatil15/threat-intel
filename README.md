@@ -141,6 +141,19 @@ requests
 ```
 
 ---
+---
+
+## Screenshots
+
+### Dashboard Preview
+<p align="center">
+  <img src="images/img1.jpeg" width="900"><br>
+  <img src="images/img2.jpeg" width="900"><br>
+  <img src="images/img3.jpeg" width="900"><br>
+  <img src="images/img4.jpeg" width="900"><br>
+  
+  <em>Interactive dashboard visualizing attacker activity, credentials, and trends.</em>
+</p>
 
 ## Disclaimer
 Deploy honeypots responsibly — only on infrastructure you own, in isolated environments, and in compliance with your cloud provider's terms of service.
