@@ -79,9 +79,9 @@ def geolocate_ips(ip_tuple):
         except:
             results.append({
                 "IP Address": ip,
-                "Country": "China",
-                "City": "Qingdao",
-                "ISP / Org": "Aliyun Computing Co., LTD",
+                "Country": "Unknown",
+                "City": "Unknown",
+                "ISP / Org": "Unknown",
                 "Attempts": ips[ip],
             })
     return pd.DataFrame(results)
